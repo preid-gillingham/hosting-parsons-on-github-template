@@ -17,7 +17,7 @@ title: Multiple Parson's Problems on One Page
 <script type="text/javascript"> 
 (function(){
   var initial = "import random \n" +
-    "lost = False\nscore = 0" +
+    "lost = False\nscore = 0 \n" +
     "print(&quot;Welcome to Twisted Guess the Number!&quot;) \nprint(&quot;You&#039;ll be presented with two numbers and asked to guess the third,&quot;) \nprint(&quot;which will either be the sum of the two,&quot;) \nprint(&quot;the multiple of the two,&quot;) \nprint(&quot;or the second subtracted from the first.&quot;)" +
     "while not lost:" +
     "    number1 = random.randint(1, 11)\nnumber2 = random.randint(1, 11)\noption = random.randint(1, 3)" +
