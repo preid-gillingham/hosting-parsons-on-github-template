@@ -41,7 +41,8 @@ title: Multiple Parson's Problems on One Page
     "can_indent": true,
     "x_indent": 50,
     "lang": "en",
-    "show_feedback": true
+    "show_feedback": true,
+    "trashId": "sortableTrash"
   });
   parsonsPuzzle.init(initial);
   parsonsPuzzle.shuffleLines();
@@ -55,7 +56,6 @@ title: Multiple Parson's Problems on One Page
   }); 
 })(); 
 </script>
-
 ### Implementation Notes
 
 When you host multiple Parson's problems on a single markdown page, you need to add a unique prefix. You can easily do this in the Codio generator by typing a unique prefix into the "Prefix" textbox and pressing Enter/Return. Then you can simply copy-paste like normal.
