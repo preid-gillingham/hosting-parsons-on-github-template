@@ -16,23 +16,23 @@ title: Multiple Parson's Problems on One Page
 </p> 
 <script type="text/javascript"> 
 (function(){
-  var initial = "import random\n" +
-    "lost = False \nscore = 0\n" +
-    "print(&quot;Welcome to Twisted Guess the Number!&quot;) \nprint(&quot;You&#039;ll be presented with two numbers and asked to guess the third,&quot;) \nprint(&quot;which will either be the sum of the two,&quot;) \nprint(&quot;the multiple of the two,&quot;) \nprint(&quot;or the second subtracted from the first.&quot;)\n" +
-    "while not lost:\n" +
-    "    number1 = random.randint(1, 11)\nnumber2 = random.randint(1, 11)\noption = random.randint(1, 3)\n" +
-    "    if option == 1:\n" +
-    "        answer = number1 + number2\n" +
-    "    elif option == 2:\n" +
-    "        answer = number1 - number2\n" +
-    "    else:\n" +
-    "        answer = number1 * number2\n" +
-    "    print(&quot;The first number is:&quot;, number1) \nprint(&quot;The second number is:&quot;, number2)\n" +
-    "    guess = int(input(&quot;Take a guess at the third number: &quot;))\n" +
-    "    if guess == answer:\n" +
-    "        score += 1 \nprint(&quot;You were right! Your score is now:&quot;, score)\n" +
-    "    else:\n" +
-    "        print(&quot;Incorrect! The answer was actually:&quot;, answer) \nprint(&quot;Your final score is:&quot;, score) \nlost = True \nprint()\n";
+  var initial = "import random \n" +
+    "lost = False \nscore = 0 \n" +
+    "print(&quot;Welcome to Twisted Guess the Number!&quot;) \nprint(&quot;You&#039;ll be presented with two numbers and asked to guess the third,&quot;) \nprint(&quot;which will either be the sum of the two,&quot;) \nprint(&quot;the multiple of the two,&quot;) \nprint(&quot;or the second subtracted from the first.&quot;) \n" +
+    "while not lost: \n" +
+    "    number1 = random.randint(1, 11)\nnumber2 = random.randint(1, 11)\noption = random.randint(1, 3) \n" +
+    "    if option == 1: \n" +
+    "        answer = number1 + number2 \n" +
+    "    elif option == 2: \n" +
+    "        answer = number1 - number2 \n" +
+    "    else: \n" +
+    "        answer = number1 * number2 \n" +
+    "    print(&quot;The first number is:&quot;, number1) \nprint(&quot;The second number is:&quot;, number2) \n" +
+    "    guess = int(input(&quot;Take a guess at the third number: &quot;)) \n" +
+    "    if guess == answer: \n" +
+    "        score += 1 \nprint(&quot;You were right! Your score is now:&quot;, score) \n" +
+    "    else: \n" +
+    "        print(&quot;Incorrect! The answer was actually:&quot;, answer) \nprint(&quot;Your final score is:&quot;, score) \nlost = True \nprint() \n";
   var parsonsPuzzle = new ParsonsWidget({
     "sortableId": "sortable",
     "max_wrong_lines": 10,
